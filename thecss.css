@@ -150,3 +150,8 @@ h4 {
     flex-direction: row;
   }
 }
+@media (max-width: 800px) {
+  .textbox {
+    overflow: scroll;
+  }
+}
