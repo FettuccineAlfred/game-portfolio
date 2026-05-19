@@ -1,0 +1,152 @@
+* {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #D3FAD6;
+}
+h1 {
+    text-align: center;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h2 {
+    color: #4A7C59;
+    text-align: center;
+    text-shadow: -1px 0 #385e43, 0 1px #385e43, 1px 0 #385e43, 0 -1px #385e43;
+}
+
+h4 {
+    margin: 10px
+}
+.textflex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+}
+.sectionA {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px
+}
+.textbox {
+    text-align: center;
+    border-radius: 25px 25px 5px 25px;
+    background-color: #FFD5C2;
+    border: 5px solid #875053;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 150px;
+}
+.fettsays {
+    width: 150px;
+    height: 150px;
+}
+.socials {
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #FFD5C2;
+    border: 5px solid #875053;
+    padding: 20px;
+    max-width: 350px;
+    
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+}
+
+.image_border {
+    border: 5px solid #4A7C59;
+    width: fit-content;
+    height: fit-content;
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px; /* Gap between elements. Avoid setting margin of the individual elements. */
+    margin: 30px; /* Margin around all the elements. */
+    /* gap + margin is essentially the same as what you had before by setting the margin in the div
+       elements, but much more responsive and won't break when you change the layout. */
+}
+/* Important: I'd use .container > div and not .container div. 
+   The latter checks for divs ANYWHERE inside .container. The former only checks direct children. */
+.container > div {
+    background-color: #E0FFB5;
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    border: 5px solid #4A7C59;
+    padding: 20px;
+    box-shadow: 10px 10px #1A1F16;
+    width: 100%; /* Makes sure each one fills as much space as they can. */
+    max-height: 600px;
+    box-sizing: border-box; /* Takes the border into account when calculating widths. */
+}
+
+.container-img {
+    border: 5px solid #004417;
+    width: 100%; /* Change this value to change how big the image is. */
+    height: auto;
+    box-sizing: border-box;
+}
+.the_games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.game_dimensions {
+    width: 250px; 
+    height: 360px;
+}
+.the_games div {
+  background-color: #E0FFB5;
+  color:#000;
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+  border: 5px solid #4A7C59;
+  border-radius: 25px 25px 25px 25px;
+  padding: 20px;
+  box-shadow: 10px 10px #1A1F16;
+}
+.game_images {
+    width:150px;
+    height:150px;
+}
+
+.border-green {
+    border: 5px solid #004417;
+}
+.border-blue {
+    border: 5px solid #00435A;
+}
+.border-loop {
+    border: 5px solid #FF5454;
+}
+.border-lazy {
+    border: 5px solid #724500;
+}
+.border-stellar {
+    border: 5px solid #ff52cb;
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+  .textflex {
+    flex-direction: row;
+  }
+}
