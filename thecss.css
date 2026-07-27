@@ -104,6 +104,8 @@ h4 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch; /* Makes shorter items match the tallest item. */
+    gap: 16px;
 }
 .game_dimensions {
     width: 250px; 
@@ -136,6 +138,9 @@ h4 {
 }
 .border-lazy {
     border: 5px solid #724500;
+}
+.border-scary {
+    border: 5px solid #320B1A;
 }
 .border-stellar {
     border: 5px solid #ff52cb;
