@@ -145,6 +145,9 @@ h4 {
 .border-stellar {
     border: 5px solid #ff52cb;
 }
+.border-kid {
+    border: 5px solid #005611;
+}
 
 
 @media (min-width: 800px) {
