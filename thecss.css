@@ -30,6 +30,13 @@ h4 {
     gap: 30px;
     align-items: center;
 }
+
+.blogflex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 .sectionA {
     display: flex;
     justify-content: center;
@@ -58,6 +65,18 @@ h4 {
     max-width: 350px;
     
 }
+
+.blog {
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #E0FFB5;
+    border: 5px solid #4A7C59;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px;
+    
+}
+
 
 .social-link {
     width: 50px;
